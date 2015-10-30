@@ -27,3 +27,7 @@ Things you may want to cover:
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+== Informações importantes
+
+* O arquivo database.yml.skel é um esqueleto para o arquivo de configuração do banco de dados. Para configurar o ambiente, basta remover a extensão .skel e configurá-lo :)
