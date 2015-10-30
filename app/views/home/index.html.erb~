@@ -1,2 +1,0 @@
-<h1>Projeto</h1>
-<p><%= @welcome %></p>
