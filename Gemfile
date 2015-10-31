@@ -31,6 +31,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+# 
+# SAD development gems
+
+gem 'slim-rails', '~> 3.0', '>= 3.0.1'
+gem 'slim', '~> 3.0', '>= 3.0.6'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

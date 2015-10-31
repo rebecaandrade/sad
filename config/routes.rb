@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'sectors', to: 'sectors#index'
+
   get 'home/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
