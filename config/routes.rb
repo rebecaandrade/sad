@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  devise_for :members, controllers: {
+    sessions: 'members/sessions',
+    confirmations: 'members/confirmations'
+  }
   get 'sectors', to: 'sectors#index'
 
   get 'home/index'
