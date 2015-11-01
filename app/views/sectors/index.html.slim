@@ -1,0 +1,9 @@
+table
+	thead
+		th id
+		th name
+	tbody
+		- @sectors.each do |s|
+			tr
+				td = s.id
+				td = s.name
