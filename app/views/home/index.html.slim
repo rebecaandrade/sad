@@ -1,0 +1,5 @@
+section.container
+	h1 Home
+	p = @welcome
+
+	= link_to 'Sign out', destroy_member_session_url, class: 'btn btn-primary', method: :delete

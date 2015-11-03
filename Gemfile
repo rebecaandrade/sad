@@ -37,6 +37,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'slim-rails', '~> 3.0', '>= 3.0.1'
 gem 'slim', '~> 3.0', '>= 3.0.6'
 gem 'devise', '~> 3.5', '>= 3.5.2'
+gem 'bootstrap-sass', '~> 3.3.5'
 
 
 group :development, :test do
