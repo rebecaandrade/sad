@@ -1,0 +1,31 @@
+section.container
+
+	h2.text-center Login
+	br
+
+	div.well.well-lg
+		= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+			div.field.form-group
+				= f.label :email
+				br
+				.input-group
+					span#basic-addon-email.input-group-addon @
+					= f.email_field :email, autofocus: true, class: 'form-control', 'aria-describedby' => 'basic-addon-email', 'placeholder' => 'Email'
+
+			div.field.form-group
+				= f.label :password
+				br
+				.input-group
+					spam#basic-addon-password.input-group-addon *
+					= f.password_field :password, autocomplete: "off", class: 'form-control', 'aria-describedby' => 'basic-addon-password', 'placeholder' => 'Password'
+
+			- if devise_mapping.rememberable?
+				div.field.form-group.text-center
+					= f.check_box :remember_me
+					span &nbsp
+					= f.label :remember_me
+
+			div.actions.form-group
+				= f.submit "Log in", class: 'btn btn-success center-block'
+
+		== render "members/shared/links"

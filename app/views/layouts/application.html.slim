@@ -5,7 +5,10 @@ html
 		= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
 		= javascript_include_tag 'application', 'data-turbolinks-track' => true
 	body
-		p.notice = notice
-		p.alert = alert
-
+		- if notice
+			div.alert.alert-success
+				p.notice = notice
+		- if alert
+			div.alert.alert-danger
+				p.alert = alert
 		== yield
