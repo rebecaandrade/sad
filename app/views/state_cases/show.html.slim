@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  strong State:
+  = @state_case.state
+p
+  strong Punctuation:
+  = @state_case.punctuation
+
+= link_to 'Edit', edit_state_case_path(@state_case)
+'|
+= link_to 'Back', state_cases_path

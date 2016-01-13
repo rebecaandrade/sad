@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :state_cases
   devise_for :members, controllers: {
     sessions: 'members/sessions',
     confirmations: 'members/confirmations'
